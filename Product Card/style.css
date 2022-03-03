@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*:root {
+    --prinary-color: #fa160f ;
+}*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+body {
+    height: 100vh;
+    background: linear-gradient(to right, rgb(255, 251, 0), rgb(250, 15, 15));
+    font-family: 'Poppins', sans-serif;
+}
+.card {
+    width:320px;
+    height: 400px;
+    background-color:#333641;
+    margin:120px auto;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    color:white;
+    
+}
+.icon-top {
+    font-size: 25px;
+    position: absolute;
+    top:15px;
+    left:20px
+}
+.card-card {
+    left: unset;
+    right: 20px;
+}
+.card-img {
+    width: 98%;
+    transition: 0.5s;
+}
+.card-img img{
+    width:80%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-top:25px;
+}
+.card-title, .card-price {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  transition: 0.5s;
+}
+.card-title {
+    color: #fa160f
+}
+.card-size, .card-color {
+    display: flex;
+    align-items: center;
+}
+.card-size span{
+    padding: 2px 7px;
+    background-color: #dadada;
+    color: black;
+    border-radius: 5px;
+    margin: 0 10px   
+
+}
+.card-size {
+    margin: 15px 0;
+}
+.size {
+    margin-right: 15px;
+}
+.card-color span{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; 
+    margin: 0 8px;
+}
+.card-color-green {
+    background: green;
+}
+.card-color-red {
+    background: red;
+}
+.card-color-black {
+    background: black;
+}
+.card-color {
+    margin-bottom: 5px;
+}
+.color {
+    margin-right: 8px;
+}
+.card-action button{
+    margin-top:15px;
+    margin-right: 4px;
+    background: #fa160f;
+    border-style: none;
+    padding: 7px 14px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.card:hover .card-img {
+    transform: translateY(-90px) rotate(-20deg);
+}
+.card:hover .card-title {
+    transform: translate(-38px, -60px);
+    
+}
+.card:hover .card-price {
+    transform: translate(-120px, -60px);
+}
+.card-size {
+    margin-top: 160px;
+}
+.setAnimation {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+.card:hover .setAnimation {
+    visibility: visible;
+    opacity: 100;
+
+}
+.card:hover .card-size {
+    margin-top: -38px;
+}
